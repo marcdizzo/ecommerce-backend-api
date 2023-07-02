@@ -8,8 +8,8 @@ require('./connection')
 const server = http.createServer(app);
 const {Server} = require('socket.io');
 const io = new Server(server, {
-    cors: 'http://localhost:4001',
-    cors: 'https://ecommerce-app-osoi.onrender.com',
+    // cors: 'http://localhost:4001',
+    cors: 'https://ecommerce-app-osoi.onrender.com/',
     methods: ['GET','POST','PATCH','DELETE']
 })
 
