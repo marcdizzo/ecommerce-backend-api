@@ -9,6 +9,7 @@ const server = http.createServer(app);
 const {Server} = require('socket.io');
 const io = new Server(server, {
     cors: 'http://localhost:4001',
+    cors: 'https://ecommerce-app-osoi.onrender.com',
     methods: ['GET','POST','PATCH','DELETE']
 })
 
@@ -32,3 +33,5 @@ server.listen(5000,() => {
 })
 
 app.set('socketio',io);
+
+// this is awesome
