@@ -2,7 +2,7 @@ require('dotenv').config()
 
 const mongoose = require("mongoose")
 
-const connectionStr = 'mongodb://localhost:27017/ecommercebackend'
+const connectionStr = 'mongodb://127.0.0.1:27017/ecommercebackend'
 
 mongoose.connect(connectionStr, {useNewUrlParser:true})
 .then(() => console.log("connected to mongodb"))
